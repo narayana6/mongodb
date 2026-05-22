@@ -24,3 +24,9 @@ docker push 655431895664.dkr.ecr.us-east-1.amazonaws.com/roboshop/dev/mongodb:v1
 ```
 helm upgrade --install mongodb . -n roboshop
 ```
+```
+ kubens roboshop
+ `````
+ ```
+ kubectl get pods
+ ```
