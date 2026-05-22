@@ -24,9 +24,16 @@ docker push 655431895664.dkr.ecr.us-east-1.amazonaws.com/roboshop/dev/mongodb:v1
 ```
 helm upgrade --install mongodb . -n roboshop
 ```
+* go to roboshop namespace
 ```
  kubens roboshop
  `````
+ * check pods
+ 
  ```
- kubectl get pods
+  ec2-user@ip-10-0-1-110 ~/mongodb/helm ]$ kubectl get pods
+NAME                       READY   STATUS    RESTARTS   AGE
+mongodb-86dc56f8fb-9twtq   1/1     Running   0          4m15s
+
+
  ```
